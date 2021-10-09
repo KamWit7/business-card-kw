@@ -1,0 +1,78 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  //   width: 1600px;
+}
+
+.card__item {
+  background-color: #f9f9f9;
+  width: 730px;
+  height: 417px;
+  padding: 40px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.card__item:first-child {
+
+  .sun{
+    fill: #cec7c7;
+    position: absolute;
+    z-index: -10;
+    right:  0;
+    top: 0;
+  }
+
+  .profesion {
+    width: fit-content;
+    margin-left: 280px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.235;
+
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+
+  .front-list {
+    display: flex;
+    // justify-content: space-around;
+    margin-top: 160px;
+
+    .name {
+      margin-top: -80px;
+      margin-left: 90px;
+      font-weight: 400;
+      
+      font-style: normal;
+      font-size: 50px;
+      width: 500px;
+      letter-spacing: 8px;
+      word-spacing: 20px;
+      line-height: 1.115;
+    }
+
+    address {
+      margin-top: 30px;
+      margin-left: -110px;
+      p {
+        font-size: 21px;
+        letter-spacing: 1px;
+        font-weight: 400;
+      }
+      a {
+        display: block;
+        font-weight: 400;
+
+        font-size: 21px;
+        letter-spacing: 2px;
+        margin-top: 10px;
+
+        line-height: 1;
+      }
+    }
+  }
+}

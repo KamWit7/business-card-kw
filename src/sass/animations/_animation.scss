@@ -1,0 +1,46 @@
+$top: 100px;
+$left: 500px;
+$topDif: 2px;
+$leftDif: 5px;
+
+@mixin topDist($top, $topDif, $nth) {
+  top: calc(#{$top} + (#{$topDif} * (#{$nth} - 1)));
+}
+
+@mixin leftDist($left, $leftDif, $nth) {
+  left: calc(#{$left} + (#{$leftDif} * (#{$nth - 1})));
+}
+
+.card-list {
+  position: relative;
+}
+
+.card__item {
+  box-shadow: 2px 4px 6px 3px rgba(75, 61, 61, 0.3);
+  position: absolute;
+  background-image: url('./../images/lightpaperfibers.png');
+
+  &:nth-child(1) {
+    z-index: 4;
+    @include topDist($top, $topDif, 1);
+    @include leftDist($left, $leftDif, 1);
+    transform: rotate(2deg);
+  }
+  &:nth-child(2) {
+    z-index: 3;
+    @include topDist($top, $topDif, 2.2);
+    @include leftDist($left, $leftDif, 2.3);
+    transform: rotate(1deg);
+  }
+  &:nth-child(3) {
+    z-index: 2;
+    @include topDist($top, $topDif, 3.2);
+    @include leftDist($left, $leftDif, 3.9);
+    transform: rotate(-1deg);
+  }
+  &:nth-child(4) {
+    z-index: 1;
+    @include topDist($top, $topDif, 4.6);
+    @include leftDist($left, $leftDif, 4.3);
+  }
+}
