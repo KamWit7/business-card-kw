@@ -24,7 +24,10 @@ $leftDif: 5px;
     z-index: 4;
     @include topDist($top, $topDif, 1);
     @include leftDist($left, $leftDif, 1);
-    transform: rotate(2deg);
+
+    &:hover {
+      transform: rotate(2deg);
+    }
   }
   &:nth-child(2) {
     z-index: 3;

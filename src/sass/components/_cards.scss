@@ -7,72 +7,69 @@
 
 .card__item {
   background-color: #f9f9f9;
-  width: 730px;
-  height: 417px;
-  padding: 40px;
-  margin-right: 50px;
-  margin-top: 50px;
+  width: 620px;
+  height: 300px;
+  padding: 60px;
+  // margin-right: 50px;
+  // margin-top: 50px;
 }
 
 .card__item:first-child {
-
-  .sun{
-    fill: #cec7c7;
+  .sun {
+    // fill: rgb(236, 231, 209);
+    fill: rgba(236, 231, 209, 0.431);
     position: absolute;
-    z-index: -10;
-    right:  0;
+    right: 0;
     top: 0;
   }
 
   .profesion {
     width: fit-content;
-    margin-left: 280px;
+    margin-left: auto;
+    top: 20px;
+    position: relative;
+    z-index: 10;
 
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 20px;
     line-height: 1.235;
-
-    &:first-child {
-      margin-top: 10px;
-    }
   }
 
-  .front-list {
-    display: flex;
-    // justify-content: space-around;
-    margin-top: 160px;
+  .name {
+    width: fit-content;
+    margin-top: 75px;
+    margin-left: auto;
+    position: relative;
+    z-index: 11;
+    // margin-right: auto;
+    font-weight: 300;
 
-    .name {
-      margin-top: -80px;
-      margin-left: 90px;
-      font-weight: 400;
-      
-      font-style: normal;
-      font-size: 50px;
-      width: 500px;
-      letter-spacing: 8px;
-      word-spacing: 20px;
-      line-height: 1.115;
-    }
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
 
-    address {
-      margin-top: 30px;
-      margin-left: -110px;
-      p {
-        font-size: 21px;
-        letter-spacing: 1px;
-        font-weight: 400;
-      }
-      a {
-        display: block;
-        font-weight: 400;
+    letter-spacing: 10px;
+    // word-spacing: 10px;
+    line-height: 1.2;
+  }
+}
 
-        font-size: 21px;
-        letter-spacing: 2px;
-        margin-top: 10px;
+address {
+  margin-top: 30px;
+  margin-left: -110px;
+  p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  a {
+    display: block;
+    font-weight: 400;
 
-        line-height: 1;
-      }
-    }
+    font-size: 21px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+
+    line-height: 1;
   }
 }
