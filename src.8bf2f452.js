@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/zwartevilt.png":[["zwartevilt.90ee8c87.png","sHbE"],"sHbE"],"./../images/lightpaperfibers.png":[["lightpaperfibers.58068014.png","kxQZ"],"kxQZ"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/business-card-kw/src.c1ba032a.js.map
+//# sourceMappingURL=/business-card-kw/src.8bf2f452.js.map
