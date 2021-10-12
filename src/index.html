@@ -25,7 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link href="http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet" />
 
     <script src="./index.js" defer></script>
@@ -35,7 +35,7 @@
 
     <section class="container">
       <ul class="card-list">
-        <li class="card__item">
+        <li class="card__item card__item-bg-img">
           <svg class="sun" width="200" height="200">
             <use href="./images/symbol-defs.svg#icon-sun-1"></use>
           </svg>
@@ -47,7 +47,7 @@
           <h1 class="name">Kamil Witkowski</h1>
         </li>
 
-        <li class="card__item">
+        <li class="card__item card__item-bg-img">
           <h2>Kamil O. Witkowski</h2>
           <ul>
             <li>Prestige Elite Std</li>
@@ -61,20 +61,25 @@
             </li>
           </ul>
         </li>
-        <li class="card__item">
+        <li class="card__item card__item-bg-img">
           <ul>
             <li><p>Lorem Ipsum</p></li>
             <li><img src="./images/qrs.png" alt="206.785.5548" /></li>
           </ul>
         </li>
-        <li class="card__item">
-          <ul>
-            <li>
+        <li class="flip-card card__item">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
               <h2>K. WITKOWSKI</h2>
               <p>1405 Boylston Ave New York, NY 20003</p>
-            </li>
-            <li><p>Simple design</p></li>
-          </ul>
+            </div>
+            <!-- // -->
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
         </li>
       </ul>
     </section>

@@ -6,52 +6,53 @@
 }
 
 .card__item {
-  background-color: #f9f9f9;
   width: 620px;
   height: 300px;
   padding: 60px;
-  // margin-right: 50px;
-  // margin-top: 50px;
+  margin-top: 450px;
+  position: absolute;
+
+  &-bg-img {
+    background-image: url('./../images/lightpaperfibers.png');
+  }
+
 }
 
-.card__item:first-child {
-  .sun {
-    // fill: rgb(236, 231, 209);
-    fill: rgba(236, 231, 209, 0.431);
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+.sun {
+  // fill: rgb(236, 231, 209);
+  fill: rgba(236, 231, 209, 0.431);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
-  .profesion {
-    width: fit-content;
-    margin-left: auto;
-    top: 20px;
-    position: relative;
-    z-index: 10;
+.profesion {
+  width: fit-content;
+  margin-left: auto;
+  top: 20px;
+  position: relative;
+  z-index: 10;
 
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.235;
-  }
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.235;
+}
 
-  .name {
-    width: fit-content;
-    margin-top: 75px;
-    margin-left: auto;
-    position: relative;
-    z-index: 11;
-    // margin-right: auto;
-    font-weight: 300;
+.name {
+  width: fit-content;
+  margin-top: 75px;
+  margin-left: auto;
+  position: relative;
+  z-index: 11;
 
-    font-style: normal;
-    font-size: 50px;
-    text-align: center;
+  font-weight: 300;
 
-    letter-spacing: 10px;
-    // word-spacing: 10px;
-    line-height: 1.2;
-  }
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+
+  letter-spacing: 10px;
+  line-height: 1.2;
 }
 
 address {
@@ -72,4 +73,47 @@ address {
 
     line-height: 1;
   }
+}
+
+// flip card
+.flip-card {
+  position: absolute;
+  width: 620px;
+  height: 300px;
+  padding: 0;
+  margin-top: 450px;
+  box-shadow: 0px 20px 10px 0px rgba(24, 21, 21, 0.3);
+  perspective: 10000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  background-image: url('./../images/lightpaperfibers.png');
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-image: url('./../images/lightpaperfibers.png');
+  color: white;
+  transform: rotateY(180deg);
 }
