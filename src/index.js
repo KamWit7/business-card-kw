@@ -13,9 +13,10 @@ const addAniamtion = function (cardItem, className) {
 };
 
 function moveCard() {
-  [cardItems[0], cardItems[1], cardItems[2]].forEach(card => {
+  [cardItems[0], cardItems[1], cardItems[2]].forEach((card, idx) => {
     card.addEventListener('click', () => {
       addAniamtion(card, 'card__item-animation');
+      idx === 0 ? card.classList.remove('shake') : 0;
     });
   });
 
