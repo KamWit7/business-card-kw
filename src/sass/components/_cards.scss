@@ -1,24 +1,24 @@
-.card-list {
+.card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  //   width: 1600px;
-}
 
-.card__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 620px;
-  height: 300px;
-  margin-top: 450px;
-  position: absolute;
+  &__item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    height: 300px;
+    margin-top: 450px;
 
-  &-bg-img {
-    background-image: url('./../images/lightpaperfibers.png');
+    &-bg-img {
+      background-image: url('./../images/lightpaperfibers.png');
+    }
   }
 }
 
+// FIRST CARD
 .sun {
   // fill: rgb(236, 231, 209);
   fill: rgba(236, 231, 209, 0.431);
@@ -38,66 +38,34 @@
 }
 
 .name {
-  width: fit-content;
   margin-top: 75px;
   margin-left: auto;
-  position: relative;
-  z-index: 11;
 
   font-weight: 300;
-
   font-style: normal;
   font-size: 50px;
   text-align: center;
-
   letter-spacing: 10px;
   line-height: 1.2;
 }
+// FIRST CARD END
 
-address {
-  // margin-top: 30px;
-  // margin-left: -110px;
-  p {
-    font-size: 21px;
-    letter-spacing: 1px;
-    font-weight: 400;
-  }
-  a {
-    display: block;
-    font-weight: 400;
+// SECOND CARD
+//  SECOND CARD END
 
-    font-size: 21px;
-    letter-spacing: 2px;
-    // margin-top: 10px;
-
-    line-height: 1;
-  }
-}
-
-//  THIRD CARD
+// THIRD CARD
 .git {
   width: 190px;
 }
-// THIRD CARD END
+// TRHIRD CARD END
 
-// LAST CARD
-
-.contant {
-  font-size: 40px;
-  font-weight: 400;
-  margin-top: 130px;
-
-  text-shadow: 2px 2px rgba(141, 137, 137, 0.9);
-}
-
-// flip card
+//  FOURTH CARD
 .flip-card {
   position: absolute;
   width: 620px;
   height: 300px;
   padding: 0;
   margin-top: 450px;
-  box-shadow: 0px 20px 10px 0px rgba(24, 21, 21, 0.3);
   perspective: 10000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -108,12 +76,17 @@ address {
   text-align: center;
   transition: transform 700ms;
   transform-style: preserve-3d;
-  transition-delay: 500ms;
+  box-shadow: 0px 5px 5px 0px rgba(24, 21, 21, 0.1);
   transition-timing-function: ease-in-out;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+//front card
+.contant {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 130px;
+
+  text-shadow: 2px 2px rgba(141, 137, 137, 0.9);
 }
 
 .flip-card-front {
@@ -130,7 +103,41 @@ address {
 }
 
 .flip-card-back {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+//front card end
+
+//back card
+address {
+  p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  a {
+    display: block;
+    font-weight: 400;
+
+    font-size: 40px;
+    letter-spacing: 4px;
+    line-height: 1;
+
+    &:last-child {
+      margin-top: 20px;
+      letter-spacing: 7px;
+    }
+  }
+}
+
+.flip-card-back {
   background-image: url('./../images/lightpaperfibers.png');
   color: black;
   transform: rotateY(180deg);
 }
+
+// flip card

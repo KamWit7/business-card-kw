@@ -25,11 +25,11 @@ $leftDif: 5px;
 // }
 
 .card__item {
-  box-shadow: 0px 20px 10px 0px rgba(24, 21, 21, 0.3);
-
   cursor: pointer;
 
   &:nth-child(1) {
+    box-shadow: -5px 5px 7px 0px rgba(24, 21, 21, 0.1);
+
     transform: rotate(1deg);
     z-index: 4;
     @include topDist($top, $topDif, 1);
@@ -37,12 +37,16 @@ $leftDif: 5px;
   }
   &:nth-child(2) {
     z-index: 3;
+    box-shadow: -4px 4px 3px 0px rgba(24, 21, 21, 0.1);
+
     transform: rotate(1deg);
     @include topDist($top, $topDif, 2.2);
     @include leftDist($left, $leftDif, 2.3);
   }
   &:nth-child(3) {
     z-index: 2;
+    box-shadow: -3px 3px 3px 0px rgba(24, 21, 21, 0.1);
+
     transform: rotate(2deg);
     @include topDist($top, $topDif, 3.2);
     @include leftDist($left, $leftDif, 3.9);
@@ -81,7 +85,40 @@ $leftDif: 5px;
   animation: shake-card 500ms infinite;
 }
 
+.flip {
+  animation: shadowFourth;
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
 // Key frame
+
+@keyframes shadowFourth {
+  0% {
+    transform: rotateY(0deg);
+    box-shadow: 0px 0px 5px 0px rgba(24, 21, 21, 0.3);
+  }
+
+  25% {
+    // box-shadow: -30px 10px 80px 10px rgba(24, 21, 21, 0.6);
+    box-shadow: -90px 40px 50px 10px rgba(24, 21, 21, 0.6);
+  }
+
+  45% {
+    box-shadow: 0px 0px 100px 10px rgba(24, 21, 21, 0);
+  }
+
+  75% {
+    // transform: rotateY(135deg);
+    box-shadow: 90px 40px 50px 10px rgba(24, 21, 21, 0.6);
+  }
+
+  100% {
+    transform: rotateY(180deg);
+    box-shadow: 0px 0px 5px 0px rgba(24, 21, 21, 0.3);
+  }
+}
 
 @keyframes pulse-animation {
   0% {
