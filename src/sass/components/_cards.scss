@@ -1,16 +1,19 @@
+$cardWidth: 516px;
+$cardHeight: 250px;
+
 .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
   &__item {
+    width: $cardWidth;
+    height: $cardHeight;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 620px;
-    height: 300px;
-    margin-top: 450px;
+    // margin-top: 350px;
 
     &-bg-img {
       background-image: url('./../images/lightpaperfibers.png');
@@ -32,18 +35,20 @@
   margin-left: auto;
   padding-right: 20px;
   padding-bottom: 20px;
+  font-size: 17px;
+  width: 100px;
   font-weight: 600;
-  font-size: 20px;
+
   line-height: 1.235;
 }
 
 .name {
-  margin-top: 75px;
+  margin-top: 130px;
   margin-left: auto;
 
   font-weight: 300;
   font-style: normal;
-  font-size: 50px;
+  font-size: 35px;
   text-align: center;
   letter-spacing: 10px;
   line-height: 1.2;
@@ -51,21 +56,45 @@
 // FIRST CARD END
 
 // SECOND CARD
-//  SECOND CARD END
+
+.my-skills {
+  align-self: flex-start;
+
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.235;
+}
+
+.skills {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  margin-left: -75px;
+  margin-top: 30px;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+// SECOND CARD END
 
 // THIRD CARD
 .git {
-  width: 190px;
+  width: 150px;
 }
 // TRHIRD CARD END
 
 //  FOURTH CARD
 .flip-card {
-  position: absolute;
-  width: 620px;
-  height: 300px;
+  width: $cardWidth;
+  height: $cardHeight;
   padding: 0;
-  margin-top: 450px;
+
   perspective: 10000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -81,16 +110,17 @@
 }
 
 //front card
-.contant {
-  font-size: 40px;
-  font-weight: 400;
-  margin-top: 130px;
-
-  text-shadow: 2px 2px rgba(141, 137, 137, 0.9);
-}
 
 .flip-card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url('./../images/lightpaperfibers.png');
+}
+.contant {
+  font-size: 50px;
+  font-weight: 300;
+  text-shadow: 2px 2px rgba(141, 137, 137, 0.9);
 }
 
 .flip-card-front,
@@ -117,13 +147,13 @@ address {
   p {
     font-size: 21px;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 300;
   }
   a {
     display: block;
-    font-weight: 400;
+    font-weight: 300;
 
-    font-size: 40px;
+    font-size: 33px;
     letter-spacing: 4px;
     line-height: 1;
 
