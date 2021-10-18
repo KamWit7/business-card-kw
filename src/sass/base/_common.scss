@@ -3,11 +3,25 @@ body {
   // font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
   //   font-family: 'Noto Sans JP', sans-serif;
   // font-family: 'Noto Sans Mono', monospace;
-  // background: url('./../images/zwartevilt.png');
+
+  // background: rgba(0, 0, 0, 0.58);
+  background: linear-gradient(
+      206deg,
+      #ffffff 0%,
+      rgba(236, 236, 236, 0.53) 30%,
+      rgba(0, 0, 0, 0.94) 95%
+    ),
+    url('./../images/wood3.jpg');
+  // opacity: 0.1;
+  // background-image: url('http://www.skrenta.com/images/stackoverflow.jpg'),
+  //   linear-gradient(red, yellow);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(188, 189, 177);
+
+  // background-color: rgba(75, 30, 0, 0.705);
 }
 h1,
 h2,

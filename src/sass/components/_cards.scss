@@ -16,7 +16,15 @@ $cardHeight: 250px;
     // margin-top: 350px;
 
     &-bg-img {
-      background-image: url('./../images/lightpaperfibers.png');
+      background-image: linear-gradient(
+          206deg,
+          #ffffff00 0%,
+          rgba(236, 236, 236, 0.411) 75%,
+          rgba(0, 0, 0, 0.548) 95%
+        ),
+        url('./../images/lightpaperfibers.png');
+
+      background-size: 200%;
     }
   }
 }
@@ -24,7 +32,7 @@ $cardHeight: 250px;
 // FIRST CARD
 .sun {
   // fill: rgb(236, 231, 209);
-  fill: rgba(236, 231, 209, 0.431);
+  fill: rgba(236, 231, 209, 0.924);
   position: absolute;
   right: 0;
   top: 0;
@@ -94,7 +102,6 @@ $cardHeight: 250px;
   width: $cardWidth;
   height: $cardHeight;
   padding: 0;
-
   perspective: 10000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -103,10 +110,10 @@ $cardHeight: 250px;
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 700ms;
+  animation: transform 700ms;
   transform-style: preserve-3d;
   box-shadow: 0px 5px 5px 0px rgba(24, 21, 21, 0.1);
-  transition-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 //front card
@@ -115,7 +122,15 @@ $cardHeight: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./../images/lightpaperfibers.png');
+  background-image: linear-gradient(
+      206deg,
+      #ffffff00 0%,
+      rgba(236, 236, 236, 0.411) 75%,
+      rgba(0, 0, 0, 0.548) 95%
+    ),
+    url('./../images/lightpaperfibers.png');
+
+  background-size: 200%;
 }
 .contant {
   font-size: 50px;
@@ -165,7 +180,15 @@ address {
 }
 
 .flip-card-back {
-  background-image: url('./../images/lightpaperfibers.png');
+  background-image: linear-gradient(
+      206deg,
+      #ffffff00 0%,
+      rgba(236, 236, 236, 0.411) 75%,
+      rgba(0, 0, 0, 0.548) 95%
+    ),
+    url('./../images/lightpaperfibers.png');
+
+  background-size: 200%;
   color: black;
   transform: rotateY(180deg);
 }
