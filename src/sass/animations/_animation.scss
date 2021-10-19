@@ -11,18 +11,13 @@ $leftDif: 5px;
   left: calc(#{$left} + (#{$leftDif} * (#{$nth - 1})));
 }
 
-@mixin cardAnimation($animation, $time, $z, $deley) {
+@mixin cardAnimation($animation, $time, $z) {
   animation-name: $animation;
   animation-duration: $time;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
-  // animation-delay: $deley;
   z-index: $z;
 }
-
-// .card-list {
-//   position: relative;
-// }
 
 .card__item {
   cursor: pointer;
@@ -62,15 +57,15 @@ $leftDif: 5px;
   &-animation {
     cursor: auto;
     &:nth-child(1) {
-      @include cardAnimation(firstCard, 1750ms, 4, 0ms);
+      @include cardAnimation(firstCard, 1750ms, 4);
     }
     &:nth-child(2) {
       @include leftDist($left, $leftDif, 2.3);
-      @include cardAnimation(secondCard, 1750ms, 5, 1500ms);
+      @include cardAnimation(secondCard, 1750ms, 5);
     }
     &:nth-child(3) {
       @include leftDist($left, $leftDif, 3.9);
-      @include cardAnimation(thirdCard, 1750ms, 6, 3000ms);
+      @include cardAnimation(thirdCard, 1750ms, 6);
     }
     &:nth-child(4) {
       @include leftDist($left, $leftDif, 4.3);
