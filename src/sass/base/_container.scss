@@ -1,10 +1,10 @@
 .container {
-  //   width: calc(100% - 30px);
+  min-width: calc(320px);
+  min-height: calc(100vh);
+  overflow: hidden;
 
-  //   @media screen and (min-width: 1490px) {
-  //     max-width: 1490px;
-  //   }
-
-  width: 1920px;
-  height: 960px;
+  @media screen and (min-width: 1490px) {
+    max-width: 1920px;
+    max-height: 960px;
+  }
 }

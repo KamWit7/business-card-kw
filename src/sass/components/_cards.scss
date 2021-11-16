@@ -1,19 +1,32 @@
-$cardWidth: 516px;
-$cardHeight: 250px;
+// $cardWidth: 516px;
+// $cardHeight: 250px;
+
+$cardWidth: calc(90vh); // rotate vw -> wh
+$cardHeight: calc(90vw); // rotate vh -> ww
 
 .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transform: rotate(90deg);
+
+  @media screen and (min-width: 768px) {
+    transform: rotate(0deg);
+  }
 
   &__item {
-    width: $cardWidth;
-    height: $cardHeight;
+    width: calc(90vh);
+    height: calc(90vw);
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-top: 350px;
+    // transform: rotate(90deg);
+
+    @media screen and (min-width: 500px) {
+      max-width: 516px;
+      max-height: 250px;
+    }
 
     &-bg-img {
       background-image: linear-gradient(

@@ -3,6 +3,12 @@ $left: 200px;
 $topDif: 2px;
 $leftDif: 5px;
 
+// phone
+$top: -45vw;
+$left: calc(25px + 50vw);
+$topDif: 2px;
+$leftDif: 5px;
+
 @mixin topDist($top, $topDif, $nth) {
   top: calc(#{$top} + (#{$topDif} * (#{$nth} - 1)));
 }
