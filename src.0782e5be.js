@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/woodBG.jpg":[["woodBG.e8a8cbaa.jpg","xpQt"],"xpQt"],"./../images/lightpaperfibers.png":[["lightpaperfibers.58068014.png","kxQZ"],"kxQZ"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");const e=e=>document.querySelector(e),c=e=>document.querySelectorAll(e),s=e=>console.log(e),i=c(".card__item"),t=e(".flip-card-inner"),n=[...i],[r,a,l,o]=n,d=function(e,c){e.classList.add(c)};[r,a,l].forEach((e,c)=>{e.addEventListener("click",()=>{d(e,"card__item-animation"),0===c&&e.classList.remove("shake")})}),o.addEventListener("click",()=>{d(t,"flip")});
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/business-card-kw/src.b8459c4f.js.map
+//# sourceMappingURL=/business-card-kw/src.0782e5be.js.map
